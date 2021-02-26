@@ -10,4 +10,15 @@
 
 
 
+myUniqueList = [88,77]
 
+def AddList():
+    i = eval(input("Input a number: "))
+    #e = input(eval("hello:"))
+    
+    myUniqueList.append[i]
+    
+    print(myUniqueList)
+
+AddList()
+    
