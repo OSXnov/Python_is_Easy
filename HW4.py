@@ -8,17 +8,29 @@
 # Finally, add some code below your function that tests it out. It should add a few different elements, 
 # showcasing the different scenarios, and then finally it should print the value of myUniqueList to show that it worked.
 
+#                                      Extra credit
+# Add another function that pushes all the rejected inputs into a separate global array called myLeftovers. 
+# If someone tries to add a value to myUniqueList but it's rejected (for non-uniqueness),
+# it should get added to myLeftovers instead.
 
 
-myUniqueList = [88,77]
+
+myUniqueList = [1,77,32,66]
+print("Printing the list",myUniqueList)
+myLeftovers = []
 
 def AddList():
-    i = eval(input("Input a number: "))
+    i = int(input("Input a number: "))
     #e = input(eval("hello:"))
+    if i == myUniqueList[0]  or myUniqueList[1]:  
+        print ("This number exists run the program again; Adding to leftovers")
+        myLeftovers.append(i)
+        print(myLeftovers)
+    elif i != myUniqueList:    
+        myUniqueList.append(i)
     
-    myUniqueList.append[i]
+        print("This is the new list, ",myUniqueList)
     
-    print(myUniqueList)
 
 AddList()
     
