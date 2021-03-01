@@ -32,9 +32,15 @@
 
 def FizzBuzz():
     
-    for num in range(1,100):
-        num = int(input("Enter a number:"))
-        
-        if num == 1:
+    for num in range(1,101):
+        if num % 3 == 0:
+            print("Fizz:", num)
+        elif num % 5 == 0:
+            print ("Buzz:", num)
+        elif num % 1 == 0:
             print(num)
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz:",num)
+
+FizzBuzz()
     
