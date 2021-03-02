@@ -1,3 +1,4 @@
+# Homework Assignment #4: Lists
 # Create a global variable called myUniqueList. It should be an empty list to start.
 
 # Next, create a function that allows you to add things to that list. 

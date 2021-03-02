@@ -1,4 +1,4 @@
-#Intro yo 'IF' Statements
+#Homework Assignment #3: "IF" Statements
 
 # Create a function that accepts 3 parameters and checks for equality 
 # between any two of them.
