@@ -27,7 +27,7 @@ MAX_ROWS = 50
 MAX_COLUMN = 230
 
 def drawPlayingBoard(rows, col):
-    if rows != int or col != int:
+    if type(rows) != int or type(col) != int:
         return False
 
     if rows <= 1 or col <=1:
@@ -55,7 +55,7 @@ def drawPlayingBoard(rows, col):
         else :
 
             for column in range (0, col):
-                endChar = " "
+                endChar = ""
 
                 if column == col - 1:
                     endChar = "\n"
@@ -67,11 +67,13 @@ def drawPlayingBoard(rows, col):
     return True
 
 
-def usingBoardCreated(rows,col):
+def usingBoardCreated(rows, col):
     if(drawPlayingBoard(rows, col)):
         print("Enjoy! Here is your playing board.")
 
     else:
         "No playing board for you."
 
-usingBoardCreated(5, 5)
+
+
+usingBoardCreated(5,5)
