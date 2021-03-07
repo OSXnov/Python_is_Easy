@@ -14,8 +14,8 @@
 
 #Homework #7: Dictionares and Sets
 
-song = {"Genre":"Progressive Rock", "Artist":"Pink Floyd", "Album":" Wish you were here", 
-"Year":"1975",}
+song = {"genre":"progressive rock", "artist":"pink floyd", "album":" wish you were here", 
+"year":"1975",}
 
 def printSongMD():
     print("\n *** Song Info ***\n")
@@ -23,28 +23,30 @@ def printSongMD():
         print(key, ":", song[key])
     print("\n *** End ***\n")
 
-# def askQuestion():
-#     key = input("\nGreat, let\'s start the game, guess the key?\n")
-#     value = input("\nWhat you think is the value of " + key + "?\n")
-#     if key and value:
-#         key = key.lower()
-#         value = value.lower()
-#         if key in song and song[key].lower() == value:
-#             return True
-#     return False
+def askQuestion():
+    key = input("\nGreat, let\'s start the game, guess the key?\n")
+    value = input("\nWhat you think is the value of " + key + "?\n")
+    if key and value:
+        key = key.lower()
+        
+        value = value.lower()
+        # value = value.capitalize()
+        if key in song and song[key].lower() == value:
+            return True
+    return False
 
-# def startGuessingGame():
-#     if askQuestion():
-#         print("Bingo! You guessed it right...")
-#     else:
-#         print("Oops... You missed!")
-#         repeat = input("\nWanna try again? Say 'yes' to continue or say 'no'.\n")
-#         if repeat.lower() == "yes":
-#             startGuessingGame()
-#         else:
-#             print("\nSee you again!")
+def startGuessingGame():
+    if askQuestion():
+        print("Bingo! You guessed it right...")
+    else:
+        print("Oops... You missed!")
+        repeat = input("\nWanna try again? Say 'yes' to continue or say 'no'.\n")
+        if repeat.lower() == "yes":
+            startGuessingGame()
+        else:
+            print("\nSee you again!")
 
 
 printSongMD()
-# print("Starting game....\n")
-# startGuessingGame()
+print("Starting game....\n")
+startGuessingGame()
