@@ -82,14 +82,13 @@ def updateLineInFile(file_path):
         print('Sorry, invalid line number.')
         
 
-# utility function to write certain content to a file
+
 def writeToFile(file_path, content):
     file = open(file_path, "w")
     file.write(content)
     file.close()
 
 
-#utility function to read content from a file
 def readFile(file_path):
     content = ""
     with open(file_path, "r") as file:
@@ -97,17 +96,17 @@ def readFile(file_path):
             content = content + line
     return content
 
-# append to an existing file
+
 def appendToFile(file_path, txt):
     file = open(file_path, "a")
     file.write(txt)
     file.close()
 
-# delete a file
+
 def deleteFile(file_path):
     os.remove(file_path)
 
-# create an empty file
+
 def createEmptyFile(file_path):
     file = open(file_path, "w")
     file.close()
