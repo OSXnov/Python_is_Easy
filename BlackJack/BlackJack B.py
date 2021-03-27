@@ -34,7 +34,7 @@ class Player:
       self.money = money
 
     def __str__(self): #__str__ will return a human readable string
-      currentHand = " " #slef.hand = ["A","10"]
+      currentHand = " " #self.hand = ["A","10"]
       for card in self.hand:
           currentHand  += str(card) + " "
 
