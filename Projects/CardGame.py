@@ -13,3 +13,19 @@
 # At any point during the game, someone should be able to type "--help" to be taken to a screen where they can read the rules of the game and instructions for how to play. 
 # After they're done reading, they should be able to type "--resume" to go back to the game and pick up where they left off.
 
+def choosingPlayer():
+    choice= int(input("Welcome to the Game of War, please write 1 if its one player or write 2 if its two players: "))
+    if choice == 1:
+        player1= str(input("Please enter your name player 1:"))
+        print(player1)
+    elif choice == 2:
+        player1 = str(input("Please enter your name player 1:"))
+        player2 =str(input("Please enter your name player 2:"))
+        print(player1)
+        print(player2)
+    elif choice != 1 or choice != 2:
+        print("Sorry only two playered option. Try Again!")
+
+
+
+choosingPlayer()
